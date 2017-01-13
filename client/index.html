@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="Angello">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Angello in Action</title>
+
+      <link rel="stylesheet" href="assets/css/normalize.css">
+
+      <!-- Bootstrap -->
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
+
+      <link rel="stylesheet" href="assets/css/angello.css">
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <div class="navbar navbar-fixed-top navbar-default">
+      <div class="navbar-header pull-left">
+        <a class="logo navbar-brand" href="#/">
+          <img src="assets/img/angello.png">
+        </a>
+      </div>
+      <div class="btn-group pull-right">
+        <a class="btn btn-danger" href="">
+          <span class="glyphicon glyphicon-home"></span>
+        </a>
+        <a class="btn btn-danger" href="">
+          <span class="glyphicon glyphicon-user"></span>
+        </a>
+        <a class="btn btn-danger" href="">
+          <span class="glyphicon glyphicon-signal"></span>
+        </a>
+        <a class="btn btn-default">
+          <span class="glyphicon glyphicon-log-out"></span>
+        </a>
+      </div>
+    </div>
+    
+    <div ng-view=""></div>
+    <div class="modal"></div>
+    
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.load.min.js"></script>
+    <script type="text/javascript" src="/assets/js/boot.js"></script>
+  </body>
+</html>
